@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(8, 8, 8);
+    font-family: "roboto", sans-serif;
+}
+nav {
+    position: relative;
+    padding: 10px 0px;
+    z-index: 500;
+    
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+nav li {
+    margin: 0;
+    padding: 20px 5px;
+}
+nav a {
+    font-size: 20px;
+    color: #dcd9d2;
+    text-decoration: none;
+    transition: color 0.3s;
+    background-color: #322c24;
+    padding: 10px 30px;
+    border: solid 2px #7a7673;
+}
+nav a:hover {
+    background-color: rgb(100, 88, 72);
+}
+h1 {
+    font-size: 60px;
+    color: rgb(230, 230, 230);
+    font-weight: 400;
+}
+p {
+    font-size: 20px;
+    color: rgb(230, 230, 230);
+    font-weight: 200;
+}
+a {
+    font-size: 30px;
+    color: violet;
+    font-weight: 400;
+}
+    
