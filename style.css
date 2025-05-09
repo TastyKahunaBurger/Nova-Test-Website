@@ -2,11 +2,24 @@ body {
     background-color: rgb(8, 8, 8);
     font-family: "roboto", sans-serif;
 }
+
+/* Navigation section */
+
 nav {
     position: relative;
-    padding: 10px 0px;
+    padding: 0.625rem 0;
     z-index: 500;
     
+}
+nav h1 {
+    font-size: 2.3rem;
+    color: rgb(230, 230, 230);
+    position: absolute;
+    padding: 0.5rem;
+    margin: 1.1rem 0;
+    left: 1rem;
+    top: 0;
+    font-weight: 400;
 }
 nav ul {
     list-style: none;
@@ -18,33 +31,57 @@ nav ul {
 }
 nav li {
     margin: 0;
-    padding: 20px 5px;
+    padding: 1.25rem 0.313rem;
 }
 nav a {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #dcd9d2;
     text-decoration: none;
     transition: color 0.3s;
     background-color: #322c24;
-    padding: 10px 30px;
+    padding: 0.625rem 1.875rem;
     border: solid 2px #7a7673;
 }
 nav a:hover {
     background-color: rgb(100, 88, 72);
 }
-h1 {
-    font-size: 60px;
+
+/* Header section on homepage */
+
+header {
+    background-image: url(hero-image.jpg);
+    background-size: 115vw 115vh;
+    background-repeat: no-repeat;
+    background-position: right right;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.header-content {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 7%;
+    margin-left: 3%;
+}
+.header-content button {
+    background-color: white;
+    color: rgb(8, 8, 8);
+    padding: 1.1rem 4rem;
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: 0.08rem;
+    border: none;
+}
+.header-content h1{
     color: rgb(230, 230, 230);
     font-weight: 400;
+    font-size: 4.5rem;
 }
-p {
-    font-size: 20px;
+.header-content p {
     color: rgb(230, 230, 230);
-    font-weight: 200;
+    font-size: 1.4rem;
+    line-height: 1.3;
 }
-a {
-    font-size: 30px;
-    color: violet;
-    font-weight: 400;
-}
+
     
