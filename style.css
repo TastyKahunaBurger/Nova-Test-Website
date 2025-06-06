@@ -10,6 +10,7 @@ nav {
     padding: 0.625rem 0;
     z-index: 500;
     width: 100vw;
+    position: fixed;
 }
 nav h1 {
     font-size: 2.3rem;
@@ -44,6 +45,9 @@ nav a {
 }
 nav a:hover {
     background-color: rgb(100, 88, 72);
+}
+.portfolio-nav {
+    position: relative;
 }
 
 /* Header section on homepage */
@@ -114,6 +118,91 @@ figure img {
     .image-container {
         grid-template-columns: 1fr;
     }
+
+}
+/* Contact page styles */
+
+.contact-page {
+    background-image: url(gallery2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.contact-container {
+    z-index: 500;
+    position: relative;
+    width: 75%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container h2 {
+    color: rgb(230, 230, 230);
+    margin: 0;
+    margin-bottom: 2%;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 0.5rem;
+}
+.contact-box {
+    padding: 2%;
+    background-color: rgb(27, 30, 35);
+}
+label {
+    color: rgb(230, 230, 230);
     
+}
+.first-name input, .email input, .last-name input {
+    width: 100%;
+    background-color: rgb(27, 30, 35);
+    border: 1px solid rgb(97, 100, 105);
+    line-height: 2.5rem;
+    box-shadow: 1px 1px rgb(97, 100, 105);
+    margin-top: 0.25%;
+    margin-bottom: 1%;
+    color: white;
+    font-size: 1rem;
+}
+.submit {
+    display: flex;
+    justify-content: right;
+    margin-top: 2%;
+}
+.submit input {
+    border-radius: 0px;
+    background-color: white;
+    box-shadow: 0px;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 1% 4%;
+    border: 1px solid white;
+}
+.social-tags {
+    display: flex;
+    gap: 1.5%;
+    justify-content: right;
+    margin-top: 2%;
+    padding: 0.5%;
+}
+.social-tags i {
+    background-color: black;
+    color: white;
+    font-size: 3rem;
 }
 
